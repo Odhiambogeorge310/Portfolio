@@ -54,7 +54,7 @@ def web_portfolio():
         - 🚀💼 Project links: | [Cluster Dash](https://cluster-dash.streamlit.app/) | [School Dashboard](https://analysis-nmeet9epqso2u8t2jwjygx.streamlit.app/) |
         - ❤️ Passionate about *Data Science, Data Analytics, Data Engineering, Machine Learning/Deep Learning, Software Engineering, 
           Computer Vision, and Automation*.
-        - 🤖 Also a Senior Instructor offering bootcamps on ScratchJr, Scratch, Python, HTML, and gamified coding projects.
+        - 🤖 Also a Senior Instructor offering bootcamps on ScratchJr, Scratch, Python, Artificial Intelligence for kids, HTML, and gamified coding projects.
         - 🏂 I enjoy sports such as football and cycling.
         - 🪧 Contact me at **odhigjoe@gmail.com**,   ☎ +2547 0280 1953
         - 🏠 Based in **Nairobi, Kenya**.
