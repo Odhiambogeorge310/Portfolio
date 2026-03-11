@@ -45,7 +45,7 @@ def web_portfolio():
     )
 
     # --- PAGE CONTENT ---
-    st.write("Coding Class for Kids ongoing contact for more info:  **odhigjoe@gmail.com**,  ☎ +2547 0280 1953")
+    st.write("Coding Classes for Kids – Ongoing. Contact us for more information:  **odhigjoe@gmail.com**,  ☎ +2547 0280 1953")
     if selected == "About Me":
         #st.subheader("💈 About Me")
         st.markdown("""
