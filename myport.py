@@ -20,7 +20,7 @@ def web_portfolio():
     # --- PAGE HEADER -
     st.markdown(
         """
-        <h1 style='text-align:center;'>GEORGE ODHIAMBOs 👋</h1>
+        <h1 style='text-align:center;'>GEORGE ODHIAMBO 👋</h1>
         """,
         unsafe_allow_html=True
     )
