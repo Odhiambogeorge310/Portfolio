@@ -49,8 +49,8 @@ def web_portfolio():
     if selected == "About Me":
         #st.subheader("💈 About Me")
         st.markdown("""
-        - 🧑‍💻 🧑‍💻 I am a Data Scientist, ICT Technician, and Technical Mentor with skills in Python, SQL, Tableau, Power BI, data analysis, data visualization, and interactive dashboard development. I enjoy transforming data into meaningful insights and building practical technology solutions. I am currently working on data analytics and dashboard projects.
-        - 🚀💼 Project links: | [Cluster Dash](https://cluster-dash.streamlit.app/) | [School Dashboard](https://analysis-nmeet9epqso2u8t2jwjygx.streamlit.app/) |
+        - 🧑‍💻  I am a Data Scientist, ICT Technician, and Technical Mentor with skills in Python, SQL, Tableau, Power BI, data analysis, data visualization, and interactive dashboard development. I enjoy transforming data into meaningful insights and building practical technology solutions. I am currently working on data analytics and dashboard projects.
+        - 🚀💼 Project links: | https://adidasanalytics.streamlit.app/ | [Cluster Dash](https://cluster-dash.streamlit.app/) | [School Dashboard](https://analysis-nmeet9epqso2u8t2jwjygx.streamlit.app/) |
         - ❤️ Passionate about *Data Science, Data Analytics, Data Engineering, Machine Learning/Deep Learning, Software Engineering, 
           Computer Vision, and Automation*.
         - 🤖 Also a Senior Instructor offering bootcamps on ScratchJr, Scratch, Python, Artificial Intelligence for kids, HTML, and gamified coding projects.
