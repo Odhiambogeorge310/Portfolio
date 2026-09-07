@@ -49,8 +49,8 @@ def web_portfolio():
     if selected == "About Me":
         #st.subheader("💈 About Me")
         st.markdown("""
-        - 🧑‍💻 I am a **Data Scientist, ICT Technician, and Technical Mentor** at Immaculate Catholic School, 
-          where I am currently working on a school analysis dashboard project for [Cluster_Dashboard](https://analysis-nmeet9epqso2u8t2jwjygx.streamlit.app/).
+        - 🧑‍💻 I am a **Data Scientist, ICT Technician, and Technical Mentor**, 
+          🧑‍💻 I am a Data Scientist, ICT Technician, and Technical Mentor at Immaculate Catholic School, where I am currently working on a school analysis dashboard project for Cluster_Dashboard..
         - 🚀💼 Project links: | [Cluster Dash](https://cluster-dash.streamlit.app/) | [School Dashboard](https://analysis-nmeet9epqso2u8t2jwjygx.streamlit.app/) |
         - ❤️ Passionate about *Data Science, Data Analytics, Data Engineering, Machine Learning/Deep Learning, Software Engineering, 
           Computer Vision, and Automation*.
