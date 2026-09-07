@@ -103,7 +103,7 @@ def web_portfolio():
         st.subheader("🚀 Project Links")
         st.markdown("""
         Here are some of my deployed Streamlit dashboards and data projects:
-        - 🥤 **Adidas_Business_Analytics Dashboard:** (https://adidasanalytics.streamlit.app/)emoji
+        - 📈 **Adidas_Business_Analytics Dashboard:** (https://adidasanalytics.streamlit.app/)emoji
         - 🥤 **CocaCola_Stock_Analysis Dashboard:** (https://cocacola-stock-dashboard.streamlit.app/)
         - 📈 **Cluster Dashboard:** [cluster-dash.streamlit.app](https://cluster-dash.streamlit.app/)
         - 📊 **School Performance Analytics:** [analysis-nmeet9epqso2u8t2jwjygx.streamlit.app](https://analysis-nmeet9epqso2u8t2jwjygx.streamlit.app/)
