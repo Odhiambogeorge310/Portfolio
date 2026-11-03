@@ -59,7 +59,7 @@ def web_portfolio():
         - 🏠 Based in **Nairobi, Kenya**.
         """)
         st.divider()
-    elif selected == "Dashboards":
+elif selected == "Dashboards":
 
     c1, c2, c3, c4 = st.columns(4, gap="small")
 
