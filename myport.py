@@ -12,7 +12,7 @@ def img_to_base64(path):
         return base64.b64encode(f.read()).decode()
 
 
-def glide_banner(images, height=120, speed=20, caption=""):
+def glide_banner(["bc.png", "1.jpeg", "2.jpeg", "3.jpeg"], height=120, speed=20, caption=""):
     """Shows images gliding from left to right like an advertisement banner."""
     imgs = "".join(
         f'<img src="data:image/png;base64,{img_to_base64(p)}" '
