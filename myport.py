@@ -16,8 +16,7 @@ def web_portfolio():
     st.sidebar.image("p8.png")
     st.sidebar.image("p7.png")
 
-
-    # --- PAGE HEADER -
+    # --- PAGE HEADER ---
     st.markdown(
         """
         <h1 style='text-align:center;'>GEORGE ODHIAMBO 👋</h1>
@@ -35,7 +34,7 @@ def web_portfolio():
     with c2:
         st.write("I am a **Data Scientist, ICT Technician, and Technical Mentor**")
 
-    #NAVIGATION MENU (HORIZONTAL) 
+    # --- NAVIGATION MENU (HORIZONTAL) ---
     selected = option_menu(
         menu_title=None,
         options=["About Me", "Dashboards", "Project Links"],
@@ -46,63 +45,62 @@ def web_portfolio():
 
     # --- PAGE CONTENT ---
     st.write("Coding Classes for Kids – Ongoing. Contact us for more information:  **odhigjoe@gmail.com**,  ☎ +2547 0280 1953  | ☎ +2547 1124 0428")
+
     if selected == "About Me":
-        #st.subheader("💈 About Me")
         st.markdown("""
         - 🧑‍💻  I am a Data Scientist, ICT Technician, and Technical Mentor with skills in Python, SQL, Tableau, Power BI, data analysis, data visualization, and interactive dashboard development. I enjoy transforming data into meaningful insights and building practical technology solutions. I am currently working on data analytics and dashboard projects.
         - 🚀💼 Project links: | https://adidasanalytics.streamlit.app/ | https://cocacola-stock-dashboard.streamlit.app/ | https://church-analysis.streamlit.app/ | [Cluster Dash](https://cluster-dash.streamlit.app/) | [School Dashboard](https://analysis-nmeet9epqso2u8t2jwjygx.streamlit.app/) |
-        - ❤️ Passionate about *Data Science, Data Analytics, Data Engineering, Machine Learning/Deep Learning, Software Engineering, 
-          Computer Vision, and Automation*.
+        - ❤️ Passionate about *Data Science, Data Analytics, Data Engineering, Machine Learning/Deep Learning, Software Engineering, Computer Vision, and Automation*.
         - 🤖 Also a Senior Instructor offering bootcamps on ScratchJr, Scratch, Python, Artificial Intelligence for kids, HTML, and gamified coding projects.
         - 🏂 I enjoy sports such as football and cycling.
         - 🪧 Contact me at **odhigjoe@gmail.com**,   ☎ +2547 0280 1953
         - 🏠 Based in **Nairobi, Kenya**.
         """)
         st.divider()
-elif selected == "Dashboards":
 
-    c1, c2, c3, c4 = st.columns(4, gap="small")
+    elif selected == "Dashboards":
+        c1, c2, c3, c4 = st.columns(4, gap="small")
 
-    with c1:
-        st.image("bc.png", width=200, caption="Holiday Bootcamp")
-        st.divider()
+        with c1:
+            st.image("bc.png", width=200, caption="Holiday Bootcamp")
+            st.divider()
 
-    with c2:
-        st.image("p1.png", width=200)
-        st.divider()
+        with c2:
+            st.image("p1.png", width=200)
+            st.divider()
 
-    with c3:
-        st.image("p6.png", width=200)
-        st.divider()
+        with c3:
+            st.image("p6.png", width=200)
+            st.divider()
 
-    with c4:
-        st.image("p7.png", width=200)
-        st.divider()
+        with c4:
+            st.image("p7.png", width=200)
+            st.divider()
 
-    c1, c2, c3, c4 = st.columns(4, gap="small")
+        c1, c2, c3, c4 = st.columns(4, gap="small")
 
-    with c1:
-        st.image("S1.png", width=200, caption="Scratch Code for Kids")
-        st.divider()
+        with c1:
+            st.image("S1.png", width=200, caption="Scratch Code for Kids")
+            st.divider()
 
-    with c2:
-        st.image("S2.png", width=200)
-        st.divider()
+        with c2:
+            st.image("S2.png", width=200)
+            st.divider()
 
-    with c3:
-        st.image("p3.png", width=200)
-        st.divider()
+        with c3:
+            st.image("p3.png", width=200)
+            st.divider()
 
-    with c4:
-        st.image("p9.png", width=200)
-        st.divider()
-    
+        with c4:
+            st.image("p9.png", width=200)
+            st.divider()
+
     elif selected == "Project Links":
         st.subheader("🚀 Project Links")
         st.markdown("""
         Here are some of my deployed Streamlit dashboards and data projects:
-        - 📈 **Adidas_Business_Analytics Dashboard:** (https://adidasanalytics.streamlit.app/)emoji
-        - 🥤 **CocaCola_Stock_Analysis Dashboard:** (https://cocacola-stock-dashboard.streamlit.app/)
+        - 📈 **Adidas_Business_Analytics Dashboard:** [adidasanalytics.streamlit.app](https://adidasanalytics.streamlit.app/)
+        - 🥤 **CocaCola_Stock_Analysis Dashboard:** [cocacola-stock-dashboard.streamlit.app](https://cocacola-stock-dashboard.streamlit.app/)
         - 📈 **Cluster Dashboard:** [cluster-dash.streamlit.app](https://cluster-dash.streamlit.app/)
         - 📊 **School Performance Analytics:** [analysis-nmeet9epqso2u8t2jwjygx.streamlit.app](https://analysis-nmeet9epqso2u8t2jwjygx.streamlit.app/)
         - 💻 **GitHub Portfolio:** [github.com/odhigjoe](https://github.com/odhigjoe)
