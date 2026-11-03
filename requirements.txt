@@ -1,9 +1,10 @@
+streamlit>=1.32
 pandas
 numpy
-streamlit
-streamlit-card
-streamlit-extras
-streamlit-option-menu
 matplotlib
 plotly
 openpyxl
+streamlit-card
+streamlit-extras
+streamlit-option-menu
+altair>=5
