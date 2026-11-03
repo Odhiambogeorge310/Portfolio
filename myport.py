@@ -9,7 +9,7 @@ def web_portfolio():
     st.sidebar.image("pic3.png", width=100, caption="DASHBOARDS")
     st.sidebar.image("gp.png", caption="School Analysis")
     st.sidebar.image("p1.png", caption="CocaCola_Stock_Analysis")
-    st.sidebar.image("pic6.png")
+    st.sidebar.image("p6.png")
     st.sidebar.image("p5.png")
     st.sidebar.image("p3.png")
     st.sidebar.image("p4.png")
