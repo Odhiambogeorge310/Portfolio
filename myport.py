@@ -62,7 +62,7 @@ def web_portfolio():
         c1, c2, c3, c4 = st.columns(4, gap="small")
 
         with c1:
-            st.image("piccs.png", width=200, caption="Holiday Bootcamp")
+            st.image("bc.png", width=200, caption="Holiday Bootcamp")
             st.divider()
 
         with c2:
