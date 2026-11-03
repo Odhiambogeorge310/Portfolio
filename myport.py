@@ -6,7 +6,7 @@ st.set_page_config(page_title="My Portfolio", layout="wide", page_icon="⭐")
 
 def web_portfolio():
     # --- SIDEBAR CONTENT ---
-    st.sidebar.image("pic3.png", width=100, caption="DASHBOARDS")
+    st.sidebar.image("bc.png", width=100, caption="DASHBOARDS")
     st.sidebar.image("gp.png", caption="School Analysis")
     st.sidebar.image("p1.png", caption="CocaCola_Stock_Analysis")
     st.sidebar.image("p6.png")
