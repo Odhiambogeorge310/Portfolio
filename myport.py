@@ -59,48 +59,43 @@ def web_portfolio():
         - 🏠 Based in **Nairobi, Kenya**.
         """)
         st.divider()
-
 elif selected == "Dashboards":
 
     c1, c2, c3, c4 = st.columns(4, gap="small")
 
-        with c1:
-            st.image(
-                "bc.png",
-                width=200,
-                caption="Holiday Bootcamp"
-            )
-            st.divider()
-    
-        with c2:
-            st.image("p1.png", width=200)
-            st.divider()
-    
-        with c3:
-            st.image("p6.png", width=200)
-            st.divider()
-    
-        with c4:
-            st.image("p7.png", width=200)
-            st.divider()
+    with c1:
+        st.image("bc.png", width=200, caption="Holiday Bootcamp")
+        st.divider()
 
-        c1, c2,c3,c4 = st.columns(4, gap="small")
-        with c1:
-            st.image("S1.png", width=200, caption="Scratch Code for Kids")
-            
+    with c2:
+        st.image("p1.png", width=200)
+        st.divider()
 
-        with c2:
-            st.image("S2.png", width=200, caption="")
-            st.divider()
+    with c3:
+        st.image("p6.png", width=200)
+        st.divider()
 
-        with c3:
-            st.image("p3.png", width=200, caption="")
-            st.divider()
-        
-        with c4:
-            st.image("p9.png", width=200, caption="")
-            st.divider()
-    
+    with c4:
+        st.image("p7.png", width=200)
+        st.divider()
+
+    c1, c2, c3, c4 = st.columns(4, gap="small")
+
+    with c1:
+        st.image("S1.png", width=200, caption="Scratch Code for Kids")
+        st.divider()
+
+    with c2:
+        st.image("S2.png", width=200)
+        st.divider()
+
+    with c3:
+        st.image("p3.png", width=200)
+        st.divider()
+
+    with c4:
+        st.image("p9.png", width=200)
+        st.divider()
     
     elif selected == "Project Links":
         st.subheader("🚀 Project Links")
