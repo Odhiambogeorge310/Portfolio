@@ -64,25 +64,25 @@ def web_portfolio():
 
     c1, c2, c3, c4 = st.columns(4, gap="small")
 
-    with c1:
-        st.image(
-            "bc.png",
-            width=200,
-            caption="Holiday Bootcamp"
-        )
-        st.divider()
-
-    with c2:
-        st.image("p1.png", width=200)
-        st.divider()
-
-    with c3:
-        st.image("p6.png", width=200)
-        st.divider()
-
-    with c4:
-        st.image("p7.png", width=200)
-        st.divider()
+        with c1:
+            st.image(
+                "bc.png",
+                width=200,
+                caption="Holiday Bootcamp"
+            )
+            st.divider()
+    
+        with c2:
+            st.image("p1.png", width=200)
+            st.divider()
+    
+        with c3:
+            st.image("p6.png", width=200)
+            st.divider()
+    
+        with c4:
+            st.image("p7.png", width=200)
+            st.divider()
 
         c1, c2,c3,c4 = st.columns(4, gap="small")
         with c1:
