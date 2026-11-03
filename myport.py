@@ -4,6 +4,29 @@ from streamlit_option_menu import option_menu
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="My Portfolio", layout="wide", page_icon="⭐")
 
+
+import base64
+
+def img_to_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+def glide_banner(images, height=120, speed=20):
+    imgs = "".join(
+        f'<img src="data:image/png;base64,{img_to_base64(p)}" style="height:{height}px; margin-right:40px;">'
+        for p in images
+    )
+    html = (
+        "<style>"
+        ".glide-wrap{overflow:hidden;width:100%;white-space:nowrap;}"
+        ".glide-track{display:inline-block;animation:glide " + str(speed) + "s linear infinite;}"
+        ".glide-track:hover{animation-play-state:paused;}"
+        "@keyframes glide{from{transform:translateX(-100%);}to{transform:translateX(100vw);}}"
+        "</style>"
+        "<div class='glide-wrap'><div class='glide-track'>" + imgs + "</div></div>"
+    )
+    st.markdown(html, unsafe_allow_html=True)
+
 def web_portfolio():
     # --- SIDEBAR CONTENT ---
     st.sidebar.image("pic3.png", width=100, caption="DASHBOARDS")
