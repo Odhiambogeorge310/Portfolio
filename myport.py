@@ -1,5 +1,7 @@
 import base64
+import io
 import streamlit as st
+from PIL import Image
 from streamlit_option_menu import option_menu
 
 # --- PAGE CONFIG ---
@@ -7,26 +9,38 @@ st.set_page_config(page_title="My Portfolio", layout="wide", page_icon="⭐")
 
 
 # --- HELPERS ---
-def img_to_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
+@st.cache_data
+def img_to_base64(path, height):
+    """Resizes the picture (keeps it light) and returns it as base64 JPEG."""
+    img = Image.open(path).convert("RGB")
+    new_h = height * 2  # 2x for sharp display
+    new_w = int(img.width * new_h / img.height)
+    img = img.resize((new_w, new_h))
+    buf = io.BytesIO()
+    img.save(buf, format="JPEG", quality=80)
+    return base64.b64encode(buf.getvalue()).decode()
 
 
-def glide_banner(["bc.png", "1.jpeg", "2.jpeg", "3.jpeg"], height=120, speed=20, caption=""):
-    """Shows images gliding from left to right like an advertisement banner."""
-    imgs = "".join(
-        f'<img src="data:image/png;base64,{img_to_base64(p)}" '
-        f'style="height:{height}px; margin-right:40px;">'
-        for p in images
-    )
+def glide_banner(images, height=120, speed=20, caption=""):
+    """Shows ALL images gliding from left to right like an advertisement banner."""
+    tags = []
+    for p in images:
+        try:
+            tags.append(
+                f'<img src="data:image/jpeg;base64,{img_to_base64(p, height)}" '
+                f'style="height:{height}px; margin-right:40px;">'
+            )
+        except Exception as e:
+            st.warning(f"Could not load banner picture '{p}': {e}")
+    imgs = "".join(tags)
     html = (
         "<style>"
         ".glide-wrap{overflow:hidden;width:100%;white-space:nowrap;}"
-        ".glide-track{display:inline-block;animation:glide " + str(speed) + "s linear infinite;}"
+        ".glide-track{display:inline-flex;width:max-content;animation:glide " + str(speed) + "s linear infinite;}"
         ".glide-track:hover{animation-play-state:paused;}"
-        "@keyframes glide{from{transform:translateX(-100%);}to{transform:translateX(100vw);}}"
+        "@keyframes glide{from{transform:translateX(-50%);}to{transform:translateX(0);}}"
         "</style>"
-        "<div class='glide-wrap'><div class='glide-track'>" + imgs + "</div></div>"
+        "<div class='glide-wrap'><div class='glide-track'>" + imgs + imgs + "</div></div>"
         "<p style='text-align:center;font-weight:bold;font-size:18px;margin-top:6px;'>"
         + caption + "</p>"
     )
@@ -65,9 +79,9 @@ def web_portfolio():
 
     # --- GLIDING BANNER (ADVERT) ---
     glide_banner(
-        ["bc.png"],
+        ["bc.png", "1.jpeg", "2.jpeg", "3.jpeg"],
         height=120,
-        speed=20,
+        speed=30,
         caption="Holiday Teens Coding Bootcamp – Ongoing"
     )
 
