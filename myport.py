@@ -12,7 +12,7 @@ def img_to_base64(path):
         return base64.b64encode(f.read()).decode()
 
 
-def glide_banner(images, height=120, speed=20):
+def glide_banner(images, height=120, speed=20, caption=""):
     """Shows images gliding from left to right like an advertisement banner."""
     imgs = "".join(
         f'<img src="data:image/png;base64,{img_to_base64(p)}" '
@@ -27,6 +27,8 @@ def glide_banner(images, height=120, speed=20):
         "@keyframes glide{from{transform:translateX(-100%);}to{transform:translateX(100vw);}}"
         "</style>"
         "<div class='glide-wrap'><div class='glide-track'>" + imgs + "</div></div>"
+        "<p style='text-align:center;font-weight:bold;font-size:18px;margin-top:6px;'>"
+        + caption + "</p>"
     )
     st.markdown(html, unsafe_allow_html=True)
 
@@ -62,7 +64,12 @@ def web_portfolio():
         st.write("I am a **Data Scientist, ICT Technician, and Technical Mentor**")
 
     # --- GLIDING BANNER (ADVERT) ---
-    glide_banner(["bc.png"], height=120, speed=20)
+    glide_banner(
+        ["bc.png"],
+        height=120,
+        speed=20,
+        caption="Holiday Teens Coding Bootcamp – Ongoing"
+    )
 
     # --- NAVIGATION MENU (HORIZONTAL) ---
     selected = option_menu(
@@ -92,7 +99,7 @@ def web_portfolio():
         c1, c2, c3, c4 = st.columns(4, gap="small")
 
         with c1:
-            st.image("bc.png", width=200, caption="Holiday Bootcamp")
+            st.image("bc.png", width=200, caption="Holiday Teens Coding Bootcamp – Ongoing")
             st.divider()
 
         with c2:
