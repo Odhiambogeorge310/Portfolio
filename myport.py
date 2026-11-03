@@ -65,7 +65,7 @@ def web_portfolio():
         #st.write("Coding Class for Kids ongoing contact for more info:☎")
         c1, c2,c3,c4 = st.columns(4, gap="small")
         with c1:
-            st.image("gp.png", width=200, caption="")
+            st.image("bc.png", width=200, caption="")
             st.divider()
 
         with c2:
