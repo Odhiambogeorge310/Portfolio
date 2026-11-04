@@ -71,7 +71,7 @@ def web_portfolio():
     c1, c2 = st.columns(2, gap="small")
 
     with c1:
-        st.image("pic3.png", width=150, caption="GEORGE ODHIAMBO")
+        st.image("prof.jpeg", width=150, caption="GEORGE ODHIAMBO")
         st.divider()
 
     with c2:
